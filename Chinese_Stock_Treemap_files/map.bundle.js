@@ -2982,6 +2982,10 @@
 				},React.createElement("td", {
 				className: "ticker", 
 				width: 98
+				}, stockCode)
+				,React.createElement("td", {
+				className: "ticker", 
+				width: 98
 				}, t.name),React.createElement("td", null,React.createElement("img",{
 				className:"smallLine",src:"http://chart.jrjimg.cn/pngdata/minpic/pic40/" +stockCode+".png"})),React.createElement("td", { className: "change"}, i(t)))
 				,React.createElement("tr",{
@@ -3012,6 +3016,9 @@
                                     return React.createElement("tr", {
 				    	key: t.name
 					},React.createElement("td", {
+					className: "smallticker"
+					}, listStockCode)
+					,React.createElement("td", {
 					className: "smallticker"
 					}, t.name),React.createElement("td",null,React.createElement("img",{
 					className:"smallLine",src:"http://chart.jrjimg.cn/pngdata/minpic/pic40/"+listStockCode+".png"})),
