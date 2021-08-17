@@ -2959,6 +2959,7 @@
 
                     if (!this.state.shown) return null;
                     var  stockCode= (t.id).substr(0,t.id.indexOf("."));
+		    var  prefix = (t.id).substr(t.id.indexOf(".")+1).toLowerCase();		
                     var a = this.state.sparklinesData && this.state.sparklinesData[t.name],
                         d = a && a[a.length - 1] ? this.state.sparklinesData[t.name][this.state.sparklinesData[t.name].length - 1].toFixed(2) : "--",
                         r = c.getColorScale(),
@@ -2983,11 +2984,21 @@
 				width: 98
 				}, t.name),React.createElement("td", null,React.createElement("img",{
 				className:"smallLine",src:"http://chart.jrjimg.cn/pngdata/minpic/pic40/" +stockCode+".png"})),React.createElement("td", { className: "change"}, i(t)))
-				,React.createElement("tr", {
+				,React.createElement("tr",{
 				key: t.name + "-hover-description",
 				className: "hovered is-description",				
 				style: {
 					backgroundColor: r(t.perf),
+					height: 16 
+					}
+				},React.createElement("td", {colSpan: "4"}, ))
+                		,React.createElement("tr",null,React.createElement("td", {colSpan: "4"}
+                    		,React.createElement("img",{className:"smallLine",src:"http://image.sinajs.cn/newchart/daily/n/"+prefix +stockCode+".gif"})))
+				,React.createElement("tr", {
+				key: t.name + "-hover-description",
+				className: "hovered is-description",				
+				style: {
+					//backgroundColor: r(t.perf),
 					height: 16 
 					}
 				},React.createElement("td", {
