@@ -26,8 +26,8 @@ function getTime() {
     return currentdate
 }
 
-function judgeWorkTime(timeStamp='') {
-        if ( timeStamp == 'undefine' || timeStamp == '') {
+function judgeWorkTime(timeStamp) {
+        if ( timeStamp == undefined || timeStamp == '') {
         	timeStamp = new Date();
         }
         var isWeek = timeStamp.getDay(); //0 周日  6周六
