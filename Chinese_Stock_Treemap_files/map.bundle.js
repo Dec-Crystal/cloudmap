@@ -2741,8 +2741,10 @@
                         n = t.offsetY,
                         d = c.getNodeAtPosition(a, n);
                     if(d && d.id){
-                        var prefix = d.id.substring(7)
-                        window.open("http://quote.eastmoney.com/concept/"+prefix+d.id.substring(0,6)+".html#fschart-k");
+                        var prefix = d.id.substring(7);
+			var stockType = (prefix == "SZ" ? 0 : 1);
+			window.open("http://www.treeid/breed_"+ stockType + d.id.substring(0,6));
+                        //window.open("http://quote.eastmoney.com/concept/"+prefix+d.id.substring(0,6)+".html#fschart-k");
                         //window.open("http://stockpage.10jqka.com.cn/"+d.id.substring(0,6));
                         //window.open("https://xueqiu.com/S/"+prefix+d.id.substring(0,6));
                     }
