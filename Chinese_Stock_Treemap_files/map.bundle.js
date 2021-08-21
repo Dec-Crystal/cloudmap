@@ -2997,9 +2997,9 @@
 					backgroundColor: r(t.perf),
 					height: 16 
 					}
-				},React.createElement("td", {colSpan: "4"}, ))
-                		,React.createElement("tr",null,React.createElement("td", {colSpan: "4"}
-                    		,React.createElement("img",{className:"smallLine",src:"http://image.sinajs.cn/newchart/daily/n/"+prefix +stockCode+".gif"})))
+				}//,React.createElement("td", {colSpan: "4"}, ))
+                		//,React.createElement("tr",null,React.createElement("td", {colSpan: "4"}
+                    		//,React.createElement("img",{className:"smallLine",src:"http://image.sinajs.cn/newchart/daily/n/"+prefix +stockCode+".gif"})))
 				,React.createElement("tr", {
 				key: t.name + "-hover-description",
 				className: "hovered is-description",				
