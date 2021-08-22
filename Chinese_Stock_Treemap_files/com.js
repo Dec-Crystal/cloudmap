@@ -52,3 +52,9 @@ function judgeWorkTime(timeStamp) {
 function validNumber(n) {
 	return n = n < 10 ? '0' + n : '' + n;
 }
+
+function isTdxw() {
+	var userAgent = navigator.userAgent;
+	var result =  userAgent.search("TdxW") != -1;
+	return result;
+}
