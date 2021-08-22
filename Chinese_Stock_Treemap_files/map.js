@@ -153,7 +153,7 @@ function getRangeLegend(colorArr, valueRangeArr) {
 $('.left_nav li').on('click', function() {
     $('.bubSearchResult').hide();
     $('.left_inp1').val('');
-    var codeArr = ['', '000001.SH', '399001.SZ', 'mainSH', 'mainSZ', '399006.SZ', '399005.SZ'];
+    var codeArr = ['', '000001.SH', '399001.SZ', '399005.SZ'];
     $('.left_nav li').removeClass('active');
     $(this).addClass('active');
     tmpCode = codeArr[$(this).index()];
