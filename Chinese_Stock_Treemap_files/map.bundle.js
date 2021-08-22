@@ -3196,7 +3196,11 @@
                 if (d && d.id) {
                     var prefix = d.id.substring(7)
                     var stockType = (prefix == "SZ" ? 0 : 1);
-                    window.location="http://www.treeid/breed_"+ stockType + d.id.substring(0,6);
+                    if(isTdxw()){
+                   	   window.location="http://www.treeid/breed_"+ stockType + d.id.substring(0,6);
+                   } else {
+                   	   window.open("http://quote.eastmoney.com/concept/"+prefix+d.id.substring(0,6)+".html#fschart-k");
+                   }
                 }
                 if (d)
                     return;
