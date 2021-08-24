@@ -1,7 +1,8 @@
-# cloudmap
-[![github](https://img.shields.io/github/release/leowy/cloudmap.svg)]() [![Build Status](https://www.travis-ci.org/leowy}/cloudmap.svg?branch=main)](https://www.travis-ci.org/leowy/cloudmap)
+<img width="1120" alt="cm" src="">
 
-![image](https://user-images.githubusercontent.com/16875621/127630661-0b84b9d8-dd30-4411-9348-68f15eadc264.png)
+# cloudmap [![github](https://img.shields.io/github/release/leowy/cloudmap.svg)]() [![Build Status](https://www.travis-ci.org/leowy}/cloudmap.svg?branch=main)](https://www.travis-ci.org/leowy/cloudmap)
+
+![image](https://user-images.githubusercontent.com/16875621/130544500-ab905ad8-a889-4682-a63b-5a26aea14a41.png)
 
 ### 部署
 可直接在[vercel](https://vercel.com/)使用
