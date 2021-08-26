@@ -114,6 +114,9 @@ $(function() {
             param[strs[i].split("=")[0]] = unescape(strs[i].split("=")[1]);
 	}
 	if(param != undefined ) {
+		if(param.fullscreen == 0) {
+			document.getElementById("enlage").click();
+		}
 		if(param.datatype  < 16 ){
 			document.getElementById('select-change').selectedIndex = param.datatype;
 			document.getElementById('select-change').click;
@@ -123,10 +126,8 @@ $(function() {
 				document.getElementsByTagName("li")[i].click();
 			}
 		}
-		if(param.fullscreen == 0) {
-			document.getElementById("enlage").click();
-		}
 	}
-});</script>
+});
+</script>
 </body>
 </html>
