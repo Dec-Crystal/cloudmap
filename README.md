@@ -7,11 +7,13 @@
 fullscreen
 - 0 全屏 默认
 - 1 非全屏
+
 stocktype
 - 0 全部A股 默认
 - 1 上证A股
 - 2 深证A股
 - 3 创业板
+
 datatype
 - 0 涨跌幅 默认
 - 1 近1周涨跌幅
