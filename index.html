@@ -114,7 +114,7 @@ $(function() {
             param[strs[i].split("=")[0]] = unescape(strs[i].split("=")[1]);
 	}
 	if(param != undefined ) {
-		if(param.test  < 16 ){
+		if(param.datatype  < 16 ){
 			document.getElementById('select-change').selectedIndex = param.test;
 			document.getElementById('select-change').click;
 		}
