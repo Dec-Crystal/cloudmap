@@ -3424,7 +3424,7 @@
                         "block" === s.perfOpacity && (f = s.x + s.dx / 2,
                             l = s.y + s.dy / 2 + .5 * s.nameFontSize,
                             e.font = "normal " + s.perfFontSize + "px Microsoft YaHei",
-                            e.fillText(s.perfText + "766", f, l));
+                            e.fillText(s.perfText, f, l));
                     for (e.strokeStyle = d.background,
                         o = 0,
                         b = t.industries.length; o < b; o++)
