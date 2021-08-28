@@ -105,29 +105,5 @@
 <script src="Chinese_Stock_Treemap_files/hammer.min.js"></script>
 <script src="Chinese_Stock_Treemap_files/map.bundle.js"></script>
 <script src="Chinese_Stock_Treemap_files/map.js"></script>
-<script type="text/javascript">
-$(function() {
-	var param = new Object();
- 	var query = window.location.search.substring(1);
-	var strs = query.split("&");
-        for (var i = 0; i < strs.length; i++) {
-            param[strs[i].split("=")[0]] = unescape(strs[i].split("=")[1]);
-	}
-	if(param != undefined ) {
-		if(param.fullscreen == 0) {
-			document.getElementById("enlage").click();
-		}
-		if(param.datatype  < 16 ){
-			document.getElementById('select-change').selectedIndex = param.datatype;
-			document.getElementById('select-change').click;
-		}
-		for (var i = 0; i < 4; i ++) { 
-			if(param.stocktype == i){
-				document.getElementsByTagName("li")[i].click();
-			}
-		}
-	}
-});
-</script>
 </body>
 </html>
